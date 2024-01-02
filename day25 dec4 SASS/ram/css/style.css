@@ -1,0 +1,114 @@
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: start;
+  background: rgb(184, 99, 99);
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  float: left;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  color: rgb(184, 99, 99);
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.cleft {
+  width: 200px;
+  height: 300px;
+  background: red;
+  float: left;
+}
+
+.cright {
+  width: 300px;
+  height: 360px;
+  background: green;
+  float: left;
+}
+
+h1 {
+  color: red;
+}
+@media (min-width: 480px) {
+  h1 {
+    color: blue;
+  }
+}
+@media (min-width: 780px) {
+  h1 {
+    color: yellow;
+  }
+}
+@media (min-width: 880px) {
+  h1 {
+    color: brown;
+  }
+}
+
+.boxa, .cleft2, .cleft1 {
+  width: 90.9090909091%;
+  height: 200px;
+}
+
+.cleft1 {
+  background: yellow;
+}
+
+.cleft2 {
+  background: green;
+  padding: 20px;
+}
+
+.aarambha {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.aarav {
+  width: 200px;
+  height: 200px;
+  background: skyblue;
+}
+
+.p-20px {
+  padding: 20px;
+  width: 20px;
+  margin: 20px;
+}
+
+.p-10px {
+  padding: 10px;
+  width: 10px;
+  margin: 10px;
+}
+
+.p-50px {
+  padding: 50px;
+  width: 50px;
+  margin: 50px;
+}
+
+.p-100px {
+  padding: 100px;
+  width: 100px;
+  margin: 100px;
+}
+
+.p-70px {
+  padding: 70px;
+  width: 70px;
+  margin: 70px;
+}/*# sourceMappingURL=style.css.map */

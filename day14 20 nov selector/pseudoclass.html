@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child{background: yellow !important;}
+        p:last-child{background: skyblue !important};
+        p:nth-child(2), p:nth-child(3){color: blueviolet;}
+        p:nth-child(2n-1){background: blue; color: yellow;}
+        p:nth-child(2n){background: red; color: pink;}
+        a:hover{color:aqua !important;}
+        a:visited{color: brown;}
+        a:link{color:chartreuse;}
+        a:active{color:black;}
+
+        :root{
+            --brand: red;
+            --w: 100px;
+        }
+
+        h1{
+            background: var(--brand);
+            width:var(--w);
+            height:var(--w);
+        }
+
+        input:required{border: 2px aqua solid;}
+        input:read-only{color: yellow;}
+        input:disabled{background-color: var(--brand);}
+        input:checked{width: 30px; height: 30px;}
+
+    </style>
+
+</head>
+<body>
+    <input type="text" required> <input type="text" value="a" readonly> <input type="text" value="b" disabled>
+    <input type="text" required> <input type="radio">
+    <h1>This is demo</h1>
+    <a href="https://youtube.com">youtube</a>
+    <a href="https://google.com">google</a>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+    </div>
+</body>
+</html>

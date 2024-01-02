@@ -1,0 +1,329 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+ @import 'var';
+ @import 'mixin';
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ ul{
+    list-style: none;
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+ .hero{
+    background: url(https://sangalotech.com/html/15/assets/images/hero-banner.jpg);
+    height: 100vh;
+    background-size: cover;
+    @include res{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    header{
+        padding: 25px;
+        @include flex(space-between);
+        color: $w;
+        .logo{
+            @include res{
+                flex-grow: 1;
+            }
+        }
+        h2{
+            font-family: 'Carter One', sans-serif;
+        }
+        nav{
+            flex-grow: 1;
+            @include res{
+                flex-grow: 0;
+            }
+            span{
+                display: none;
+                @include res{
+                    display: block;
+                }
+            }
+            ul{
+                @include res{
+                    position: absolute;
+                    left: 0;
+                    top: 55px;
+                    background: black;
+                    width: 100%;
+                    margin: 0;
+                    padding: 20px;
+                    display: none;
+                }
+                @include flex(flex-start);
+                margin-left: 30px;
+                gap: 20px;
+                a{
+                    color: $w;
+                    font-family: 'Nunito Sans',sans-serif;
+                    font-weight: 700; 
+                }
+            }
+        }
+        .icons{
+            @include flex(space-between);
+            gap:20px;
+        }
+    }
+    &-content{
+        width: 40%;
+        @include res{
+            width: 100%;
+        }
+        color: white;
+        text-align: center;
+        margin: 3% 0 0 4%;               
+        h2{
+            font-size: 75px;
+            font-family:  'Bangers', sans-serif;
+        }
+        h1{
+            font-size: 150px;
+            font-family:  'Bangers', sans-serif;
+        }
+        p{
+            font-family: 'Nunito Sans',sans-serif;
+            font-weight: 400px;
+            font-size: 24px;
+        }
+        @include res{
+            h2{
+                font-size: 37px;
+            }
+            h1{
+                font-size: 75px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        a{
+            color: white;
+            background: black;
+            padding: 8px 24px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 700px; 
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 50px;
+        }
+     }
+    
+ }
+
+ .title{
+    text-align: center;
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 700px;
+    font-size: 40px;
+    span{
+        color: $brand;
+    }
+ }
+
+ .category{
+    padding: 40px 0; 
+    &-inner
+    {
+        @include flex(space-between,wrap);
+        gap: 20px;
+        .fbox{
+            width: 18%;
+            @include res{
+                width: 100%;
+            }
+            img{
+                width: 100%;
+            }
+            h2{
+                text-align: center; 
+                font-family: 'Nunito Sans',sans-serif;
+                font-weight: 700px;
+                font-size: 20px;
+            }
+        }
+        
+    }
+ }
+
+ .featured{
+    padding: 40px;
+    &-inner{
+        @include flex(space-between,wrap);
+        gap:20px;
+        .fbox{
+            width: 30%;
+            @include res{
+                width: 100%;
+            }
+            position: relative;
+            img{
+                width: 100%;
+            }
+            &-c{
+                position: absolute;
+                top: 40px;
+                left: 20px;
+                font-family: 'Nunito Sans',sans-serif;
+                font-weight: 700px;
+                h4{
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 32px;
+                }
+                a{
+                    color: white;
+                    background: orange;
+                    padding: 8px 24px;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-weight: 700px; 
+                    border-radius: 50px;
+                    display: inline-block;
+                    margin-top: 10px;
+                }
+                
+            }
+        }
+    }
+ }
+
+
+ .product{
+    padding: 40px;
+    &-inner{
+     @include flex(space-between,wrap,row);
+    }
+    &-box{
+        width: 280px;
+
+        &-img{
+            position: relative;
+            border: 2px solid #ccc;
+            min-height: 290px;
+            .a{
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+            .b{
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+            &:hover{
+                .a{z-index: 2;}
+                .b{z-index: 1;}
+            }             
+        }      
+    }   
+}
+
+.fast{
+    text-align: center;
+    &-inner{
+        @include flex;
+        gap: 50px;
+        @include res{
+            flex-direction: column;
+        }
+    }
+    
+}
+
+.category1{
+    background: url(https://sangalotech.com/html/15/assets/images/cta-bg.jpg) #fdbb4b;
+    padding: 0px 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &-inner{
+        @include flex;
+        @include res{
+            flex-direction: column;
+        }
+    }
+    &-left{
+        width: 60%;
+        img{
+            width: 100%;
+        }
+    }
+    &-right{
+        width: 30%;
+    }
+}
+
+.popular{
+    padding: 40px;
+    &-img{
+        text-align: center;
+        padding: 40px;
+        @include flex(space-around);
+        @include res{
+            flex-direction: column;
+        }
+        width: 90%;
+        margin: auto;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+.nn
+{
+    display: block !important;
+}
+
+.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: green;
+    animation: mm 2s;
+    z-index: 9999;
+}
+
+@keyframes mm{
+    0%{transform: translateY(-100%);       
+    }
+    100%{transform: translateY(0%);}
+}
+
+footer{
+    background: url(https://sangalotech.com/html/15/assets/images/footer-bg.jpg);
+    height: 60vh;
+    padding: 150px 0;
+    @include res{
+        height: 70vh;
+    }
+    .footer-upper{
+        @include flex;
+        justify-content: space-around;
+        @include res{
+            flex-direction: column;
+        }
+    }
+
+    .footer-down{
+        border-top: 2px solid grey;
+        margin-top:190px; 
+        @include flex;
+        justify-content: space-around;
+        @include res{
+            flex-direction: column;
+
+        }
+    }
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Car</title>
+    <style>
+       .car{
+        position: absolute; animation: car 5s linear infinite;
+       }   
+       @keyframes car{
+        0%{left:0; top: 0; transform: rotate(0deg);}
+        20%{left:400px; top: 0; transform: rotate(0deg);}
+        25%{left: 400px; top: 0; transform: rotate(90deg);}
+        45%{left: 400px; top: 300px; transform: rotate(90deg);}
+        50%{left: 400px;top: 300px;transform: rotate(180deg);}
+        70%{left: 0px; top: 300px; transform: rotate(180deg); }
+        75%{left: 0px; top: 300px; transform: rotate(270deg);}
+        95%{left: 0px; top: 0px; transform: rotate(270deg);}
+        100%{left: 0px; top: 0px; transform: rotate(360deg);}
+       }
+    </style>
+</head>
+
+<body>
+    <div class="car">
+        <img src="https://t4.ftcdn.net/jpg/01/36/33/47/360_F_136334769_vifRha0Z0MqtMcmcsoDdLwRlRuDKkC6W.jpg"
+            alt="car image">
+    </div>
+</body>
+
+</html>

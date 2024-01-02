@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{border: 2px solid black; padding: 30px; position: relative; animation-name: m,blink;
+            animation-duration: 5s,1s; width: 100px; animation-fill-mode: forwards,
+            backwards; animation-iteration-count: 1,infinite; animation-delay: 0s,7s;
+            
+        }
+        @keyframes m{
+            0%{left:0;} 100%{left: 500px;}
+        }
+        .a{animation-timing-function: linear;}
+        .b{animation-timing-function: ease-in;}
+        .c{animation-timing-function: ease-out;}
+        .d{animation-timing-function: ease;}
+        .e{animation-timing-function: ease-in-out;}
+        .f{animation-timing-function: steps(10,start);}
+        .g{animation-timing-function: steps(10,end);}
+        @keyframes blink{
+            0%, 50%,100%{opacity: 1;}
+            25%,75%{opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box a">A</div>
+    <div class="box b">b</div>
+    <div class="box c">c</div>
+    <div class="box d">d</div>
+    <div class="box e">e</div>
+    <div class="box f">f</div>
+    <div class="box g">g</div>
+</body>
+</html>

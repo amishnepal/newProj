@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ba{grid-area: a;}
+        .tin{grid-area: b;}
+        .kot{grid-area: c;}
+        .ju{grid-area: d;}
+        .lo{grid-area: e;}
+        .ka{grid-area: f;}
+        .nepal > div { border: 2px solid red; padding: 40px;}
+        .nepal{ display: grid;
+            grid-template-areas: 'a a a' 'c b e' 'c d e' 'f f f ';
+        }
+    </style>
+</head>
+<body>
+    <div class="nepal">
+        <div class="ba">Header</div>
+        <div class="tin">Menu</div>
+        <div class="kot">Left</div>
+        <div class="ju">Mid</div>
+        <div class="lo">Right</div>
+        <div class="ka">footer</div>
+    </div>
+</body>
+</html>

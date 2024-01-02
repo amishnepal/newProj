@@ -1,0 +1,105 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1290px;
+  }
+}
+.main .navbar {
+  background: #D4000E;
+}
+.main .navbar .nav-link {
+  color: white;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.banner h2 {
+  font-size: 3.3rem;
+  font-weight: bold;
+  color: #D4000E;
+}
+
+.time {
+  padding: 10px;
+}
+.time span {
+  background: #D4000E;
+  color: white;
+  padding: 5px;
+}
+
+.banner-down {
+  position: relative;
+}
+.banner-down img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner-down .op {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.615);
+  top: 0;
+  left: 0;
+}
+.banner-down h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bg1 img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bg1 h5 {
+  color: #D4000E;
+}
+
+.bg3, .bg4 {
+  background: #ececed;
+}
+
+.bg4 h5 {
+  font-size: 22px;
+}
+.bg4 img {
+  width: 100%;
+}
+
+.title span {
+  background: #D4000E;
+  padding: 10px 15px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.sec-f {
+  margin-top: 19px;
+}
+
+.und {
+  position: relative;
+}
+
+.und::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}/*# sourceMappingURL=style.css.map */

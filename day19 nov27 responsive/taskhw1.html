@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @media(min-width:992px) {
+      .sd {
+        width: 25% !important;
+        height: 500px;
+      }
+
+      .main {
+        margin-left: 5px;
+        height: 250px;
+        width: 75%;
+      }
+
+      .con1,
+      .con2,
+      .con3 {
+        margin-left: 5px;
+        width: 25% !important;
+        height: 150px;
+
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .con .nav,
+    .con .sd,
+    .cont1 div {
+      padding: 30px;
+      border: 1px solid black;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .main {
+      padding: 100px !important;
+    }
+
+    .con,
+    .cont1 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="con">
+
+
+    <div class="nav">NAVBAR</div>
+    <div class="sd">SIDEBAR</div>
+    <div class="cont1">
+      <div class="main">MAIN</div>
+      <div class="con1">CONTENT 1</div>
+      <div class="con2">CONTENT 2</div>
+      <div class="con3">CONTENT 3</div>
+      <div class="con4">FOOTER</div>
+    </div>
+  </div>
+</body>
+
+</html>

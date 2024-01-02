@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="abc()" id="b">On</button>
+    <ul style="display: none;" id="a">
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+    <script>
+        function abc(){
+            if(document.getElementById('a').style.display=='none'){
+                document.getElementById('a').style.display='block'
+                document.getElementById('b').innerHTML='OFF'
+
+            }
+            else{
+               document.getElementById('a').style.display='none'
+               document.getElementById('b').innerHTML='ON'
+            }
+        }
+    </script>
+    <hr>
+    <h2>This is demo</h2>
+    <h2>Sajan</h2>
+    <button onclick="document.querySelector('h2').classList.add('nn')">addClass</button>
+    <button onclick="document.querySelector('h2').classList.remove('nn')">removeClass</button>
+    <button onclick="document.querySelector('h2').classList.toggle('nn')">toggleClass</button>
+    <style>
+        .nn{
+            background: green;
+        }
+    </style>
+
+</body>
+</html>

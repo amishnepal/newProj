@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .box{width: 300px; height: 300px; background: green; overflow: hidden;
+        position: relative;}
+        .box img{width: 100%; height: 100%; transition: 0.9s;}
+        .box:hover img{transform: scale(1.2);}
+        h2{position: absolute; bottom: -50px; left: 20px; color: white;}
+        .box:hover h2{transform: translateY(-100px);}
+        p{position: absolute; bottom: -100px; color: white; }
+        .box:hover p{transform: translateY(-80px); transition: 0.9s linear 2s;}
+    </style>
+</head>
+<body>
+    <div class="box" data-aos="fade-up">
+        <img src="a.jpeg" alt="">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, doloribus!</p>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

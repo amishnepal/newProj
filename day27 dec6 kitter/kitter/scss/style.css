@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  background: url(https://sangalotech.com/html/15/assets/images/hero-banner.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero {
+    height: auto;
+    padding-bottom: 40px;
+  }
+}
+.hero header {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero header .logo {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+.hero header h2 {
+  font-family: "Carter One", sans-serif;
+}
+.hero header nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero header nav {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+}
+.hero header nav span {
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero header nav span {
+    display: block;
+  }
+}
+.hero header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 30px;
+  gap: 20px;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero header nav ul {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    background: black;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    display: none;
+  }
+}
+.hero header nav ul a {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+.hero header .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+.hero-content {
+  width: 40%;
+  color: white;
+  text-align: center;
+  margin: 3% 0 0 4%;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero-content {
+    width: 100%;
+  }
+}
+.hero-content h2 {
+  font-size: 75px;
+  font-family: "Bangers", sans-serif;
+}
+.hero-content h1 {
+  font-size: 150px;
+  font-family: "Bangers", sans-serif;
+}
+.hero-content p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400px;
+  font-size: 24px;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 37px;
+  }
+  .hero-content h1 {
+    font-size: 75px;
+  }
+  .hero-content p {
+    font-size: 12px;
+  }
+}
+.hero-content a {
+  color: white;
+  background: black;
+  padding: 8px 24px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.title {
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700px;
+  font-size: 40px;
+}
+.title span {
+  color: orange;
+}
+
+.category {
+  padding: 40px 0;
+}
+.category-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+.category-inner .fbox {
+  width: 18%;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .category-inner .fbox {
+    width: 100%;
+  }
+}
+.category-inner .fbox img {
+  width: 100%;
+}
+.category-inner .fbox h2 {
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700px;
+  font-size: 20px;
+}
+
+.featured {
+  padding: 40px;
+}
+.featured-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+.featured-inner .fbox {
+  width: 30%;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .featured-inner .fbox {
+    width: 100%;
+  }
+}
+.featured-inner .fbox img {
+  width: 100%;
+}
+.featured-inner .fbox-c {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700px;
+}
+.featured-inner .fbox-c h4 {
+  font-size: 14px;
+}
+.featured-inner .fbox-c p {
+  font-size: 32px;
+}
+.featured-inner .fbox-c a {
+  color: white;
+  background: orange;
+  padding: 8px 24px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.product {
+  padding: 40px;
+}
+.product-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.product-box {
+  width: 280px;
+}
+.product-box-img {
+  position: relative;
+  border: 2px solid #ccc;
+  min-height: 290px;
+}
+.product-box-img .a {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.product-box-img .b {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.product-box-img:hover .a {
+  z-index: 2;
+}
+.product-box-img:hover .b {
+  z-index: 1;
+}
+
+.fast {
+  text-align: center;
+}
+.fast-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 50px;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .fast-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.category1 {
+  background: url(https://sangalotech.com/html/15/assets/images/cta-bg.jpg) #fdbb4b;
+  padding: 0px 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.category1-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .category1-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.category1-left {
+  width: 60%;
+}
+.category1-left img {
+  width: 100%;
+}
+.category1-right {
+  width: 30%;
+}
+
+.popular {
+  padding: 40px;
+}
+.popular-img {
+  text-align: center;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .popular-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.popular-img img {
+  width: 100%;
+}
+
+.nn {
+  display: block !important;
+}
+
+.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: green;
+  -webkit-animation: mm 2s;
+          animation: mm 2s;
+  z-index: 9999;
+}
+
+@-webkit-keyframes mm {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes mm {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+footer {
+  background: url(https://sangalotech.com/html/15/assets/images/footer-bg.jpg);
+  height: 60vh;
+  padding: 150px 0;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  footer {
+    height: 70vh;
+  }
+}
+footer .footer-upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  footer .footer-upper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+footer .footer-down {
+  border-top: 2px solid grey;
+  margin-top: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  footer .footer-down {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

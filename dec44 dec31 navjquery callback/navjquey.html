@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{height: 1900px;}
+        header{background: green; padding: 160px 0; width: 100%;}
+        .sticky{background: red; padding: 60px 0; animation: fadeOut 2s; position: fixed;}
+        @keyframes fadeOut{
+            0%{transform: translateY(-100%);}
+            100%{transform: translateY(0%);}
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if($(this).scrollTop()>150){
+                $('header').addClass('sticky')
+            }
+            else{
+                $('header').removeClass('sticky')
+            }
+        })
+    </script>
+</body>
+</html>

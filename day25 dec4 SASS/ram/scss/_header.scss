@@ -1,0 +1,29 @@
+$clr:rgb(184, 99, 99);
+$w:100px;
+
+.box{
+    display: flex;
+    justify-self: start;
+    background: $clr;
+    width: $w;
+    height: $w;
+}
+
+nav
+{
+    float: left;
+    ul
+    {
+        list-style: none;
+        li{
+            display: inline;
+            a{
+                color: $clr;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+

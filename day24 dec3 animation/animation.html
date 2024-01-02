@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{ width: 200px; height: 200px; background: red; border-radius: 50%; position: relative;}
+        .circle::before, .circle::after{ content: ''; position: absolute; width: 200px; height: 200px; background: blue; border-radius: 50%;}
+        @keyframes ripple {
+            0%{ transform: scale(1); opacity: 1;}  100%{ transform: scale(1.4); opacity: 0;}
+        }
+        .circle::after{ animation: ripple 2s infinite; }
+        .circle::before{ animation: ripple 2s infinite 1s;}
+    </style>
+</head>
+<body>
+    1.Ripple effect
+    <div class="circle"></div>
+</body>
+</html>

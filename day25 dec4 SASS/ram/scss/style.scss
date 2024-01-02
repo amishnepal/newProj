@@ -1,0 +1,76 @@
+@import 'header';
+
+@mixin box($width,$height,$bg,$ft:left){
+    width: $width;
+    height: $height;
+    background: $bg;
+    float: $ft;
+}
+
+.cleft{
+    @include box(200px,300px,red,left)
+}
+
+.cright{
+    @include box(300px,360px,green)
+}
+
+@mixin res($min){
+    @media(min-width: $min)
+    {
+        @content;
+    }
+}
+
+h1{
+   color: red;
+   @include res(480px){color: blue;}
+   @include res(780px){color: yellow;}
+   @include res(880px){color: brown;}
+}
+
+.boxa{
+    width: 200px/220px*100%;
+    height: 200px;
+}
+
+.cleft1{
+    @extend .boxa;
+    background: yellow;
+}
+
+.cleft2{
+    @extend .boxa;
+    background: green;
+    padding: 20px;
+}
+
+@mixin thumb($s,$c)
+{
+    width: $s;
+    height: $s;
+    @if $c
+    {
+        border-radius: 50%;
+    }
+    @else{
+        background: skyblue;
+    }
+}
+
+.aarambha{
+    @include thumb(200px,true )
+}
+
+.aarav{
+    @include thumb(200px,false )
+}
+
+$sizes:20px,10px,50px,100px,70px;
+
+@each $vv in $sizes{
+    .p-#{$vv}
+    {
+        padding: $vv; width: $vv; margin: $vv;
+    }
+}

@@ -1,0 +1,43 @@
+$g: #1fd91f;
+@mixin res($min: 480px, $max: 992px)
+{
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+@mixin flex($d)
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $d;
+    gap: 20px;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.g 
+{
+    padding: 60px;
+    background: $g;
+}
+.flex 
+{ 
+    margin: 30px;
+    @include res(992px, 1920px)
+    {
+        @include flex(row)
+    }
+    .box 
+    {
+        @include res(480px, 768px)
+        {
+            @include flex(row);
+            margin: 20px 0;
+        }
+    }
+ 
+}

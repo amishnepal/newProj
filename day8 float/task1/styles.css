@@ -1,0 +1,33 @@
+.left{
+    float:left;
+}
+
+.right{
+    float: right;
+}
+
+.clc{
+    clear: both;
+}
+
+.box{
+    background:#999999;
+    padding: 17px; 
+    margin: 5px 0; 
+    box-sizing: border-box; 
+}
+
+.tleft{
+    color:white;
+}
+
+.tright{
+    text-align: right;
+    color:white;
+}
+
+.box-sec{
+    background:#e8e8e8;
+    padding:200px;
+    margin-top: -4px;
+}

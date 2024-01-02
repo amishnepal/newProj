@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width:200px; height: 200px; background: red; 
+            /*transition-duration: 2.5s;
+        transition-delay: 1s; transition-property: all; transition-timing-function: linear;*/
+        transition: all 2s linear 2s;}
+        .a{width: 200px; height: 200px; background: green; transition: 0.9s;
+        transform-origin: right top;}
+        .a:hover{transform: rotate(-90deg);}
+        .box:hover{width: 400px;}
+        .b{width: 200px; height: 200px; background: blue; transition: 0.9s;}
+        .b:hover{transform: skew(30deg,40deg);}
+        .c{width: 200px; height: 200px; background: yellow; transition: 0.9s;}
+        .c:hover{transform: translate(30px,60px);}
+        .d{width: 200px; height: 200px; background: orange; transition: 0.9s;
+        transform-origin: left top;}
+        .d:hover{transform: scale(2,3);}
+        .e{width: 200px; height: 200px; background: skyblue; transition: 0.9s;}
+        .e:hover{transform: rotate(50deg) skewX(30deg) scale(1.2) translate(250px);}
+    </style>
+</head>
+<body>
+    <div class="box">A</div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d">A</div>
+    <div class="e"></div>
+</body>
+</html>

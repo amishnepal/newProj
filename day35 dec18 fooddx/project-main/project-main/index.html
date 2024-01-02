@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar   navbar-expand-lg">
+        <div class="container">
+            <h2>
+                <a class="navbar-brand" href="#">Food<span>DX</span></a>
+            </h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> About Us </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Explore Foods </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ </a>
+                        </li>
+                        <!-- <li class="nav-item btn btn-warning  ms-lg-5">
+                    <a class="nav-link " href="#">1800 789 123   </a>
+                  </li> -->
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-2 order-lg-2">
+                    <h1>Web Code Skull
+                        <span
+                           class="txt-rotate"
+                           data-period="2000"
+                           data-rotate='[  "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
+                      </h1>
+                    <p class="py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio
+                        finibus bibendum amet leo. </p>
+                    <a href="" class="btn   btn-warning px-5 py-3">Order Now <i class="fa fa-cart-arrow-down"
+                            aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="btn   ms-lg-4 shadow-lg px-5 py-3">Order Now <i class="fa fa-cart-arrow-down"
+                            aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img class="w-100" src="img/banner.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter py-5 my-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    <h3 id="number1"></h3>
+                    <p>Project</p>
+                </div>
+
+                <div class="col-lg-3">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    <h3 id="number2"></h3>
+                    <p>Project</p>
+                </div>
+                <div class="col-lg-3">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    <h3 id="number3"></h3>
+                    <p>Project</p>
+                </div>
+                <div class="col-lg-3">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    <h3 id="number4"></h3>
+                    <p>Project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg1">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img class="w-100" src="img/img.jpg" alt="">
+                </div>
+                <div class="col-lg-6 order-2 order-lg-2">
+                    <h2>We pride ourselves on making real food from the best ingredients.
+                    </h2>
+                    <p class="py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio
+                        finibus bibendum amet leo. </p>
+                    <a href="" class="btn   btn-warning px-5 py-3">Learn More <i class="fa fa-cart-arrow-down"
+                            aria-hidden="true"></i>
+                    </a>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg1 my-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+
+
+                <div class="col-lg-6 order-2 order-lg-2">
+                    <h2>We make everything by hand with the best possible ingredients.
+                    </h2>
+                    <p class="py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio
+                        finibus bibendum in sit amet leo. Mauris feugiat erat tellus.Far far away, behind the word
+                        mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    <ul class="list-unstyled">
+                        <li> <i class="fa fa-check" aria-hidden="true"></i>
+                            Etiam sed dolor ac diam volutpat.</li>
+                        <li> <i class="fa fa-check" aria-hidden="true"></i>
+                            Etiam sed dolor ac diam volutpat.</li>
+                        <li> <i class="fa fa-check" aria-hidden="true"></i>
+                            Etiam sed dolor ac diam volutpat.</li>
+                    </ul>
+                    <a href="" class="btn   btn-warning px-5 py-3">Learn More <i class="fa fa-cart-arrow-down"
+                            aria-hidden="true"></i>
+                    </a>
+
+                    </a>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 position-relative">
+                    <img class="leaf" src="img/toppng 2.png" alt="">
+                    <img class="w-100" src="img/img1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto text-center text-light py-5">
+                    <h3>When a man's stomach is full it makes no
+                        difference whether he is rich or poor.</h3>
+                    <p class="py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio
+                        finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+                    <p>Watch Our Story</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="food py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 mx-auto text-center">
+                    <h2 class="pb-3">Explore Our Foods </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum
+                        in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word mountains, far from
+                        the countries Vokalia and Consonantia, there live the blind texts. Separated they live in
+                        Bookmarksgrove.</p>
+                </div>
+            </div>
+            <div class="row my-4 g-4">
+                <div class="col-lg-4">
+                    <div class="shadow">
+                        <img src="img/f1.png" class="w-100" alt="">
+                        <div class="p-3">
+                            <h5>Rainbow Vegetable Sandwich</h5>
+                            <p class="text-mute">Time: 15 - 20 Minutes | Serves: 1</p>
+                            <p> $10.50 <del> $11.70 </del></p>
+                            <a href="" class="btn btn-warning">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="shadow">
+                        <img src="img/f1.png" class="w-100" alt="">
+                        <div class="p-3">
+                            <h5>Rainbow Vegetable Sandwich</h5>
+                            <p class="text-mute">Time: 15 - 20 Minutes | Serves: 1</p>
+                            <p> $10.50 <del> $11.70 </del></p>
+                            <a href="" class="btn btn-warning">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="shadow">
+                        <img src="img/f1.png" class="w-100" alt="">
+                        <div class="p-3">
+                            <h5>Rainbow Vegetable Sandwich</h5>
+                            <p class="text-mute">Time: 15 - 20 Minutes | Serves: 1</p>
+                            <p> $10.50 <del> $11.70 </del></p>
+                            <a href="" class="btn btn-warning">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials py-5 text-center">
+        <div class="container">
+            <h2 class="text-light pb-5">Testimonials </h2>
+
+            <div class="owl-carousel">
+                <div>
+                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts Separated they live."</p>
+                    <h5>Chiranjit Hazarika - Web Designer</h5>
+                </div>
+                <div>
+                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts Separated they live."</p>
+                    <h5>Chiranjit Hazarika - Web Designer</h5>
+                </div>
+                <div>
+                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts Separated they live."</p>
+                    <h5>Chiranjit Hazarika - Web Designer</h5>
+                </div>
+                <div>
+                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts Separated they live."</p>
+                    <h5>Chiranjit Hazarika - Web Designer</h5>
+                </div>
+                <div>
+                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts Separated they live."</p>
+                    <h5>Chiranjit Hazarika - Web Designer</h5>
+                </div>
+                <div>
+                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts Separated they live."</p>
+                    <h5>Chiranjit Hazarika - Web Designer</h5>
+                </div>
+                <div>
+                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts Separated they live."</p>
+                    <h5>Chiranjit Hazarika - Web Designer</h5>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="faq py-5">
+        <div class="container">
+            <h2 class="text-center pb-5">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                ~ Do you bake breads containing animal fats or products?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                ~ When are you opening a shop near me?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          </div>
+                        </div>
+                    
+                      </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                ~ Is Foodera Bread really baked fresh each day?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                ~ Can I order your products online?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center">
+            <ul class="d-flex gap-3 justify-content-center">
+                <li>Register   </li>
+                <li>   Forum   </li>   
+                <li> Affiliate   </li>
+                <li>   FAQ</li>
+            </ul>
+            <ul class="d-flex gap-3 justify-content-center">
+                <li><i class="fa fa-facebook" aria-hidden="true"></i>
+                </li>
+                <li>  <i class="fa fa-twitter" aria-hidden="true"></i>
+
+                </li>   
+                <li> <i class="fa fa-facebook" aria-hidden="true"></i>
+                </li>
+               
+            </ul>
+            <p>© 2021. FoodDX. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

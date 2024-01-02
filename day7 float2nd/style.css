@@ -1,0 +1,20 @@
+.a{
+   width: 200px;
+   height: 200px;
+   background: red; 
+   border-width: 20px;
+   border-color: skyblue;
+   border-style: dotted;
+   box-sizing: border-box;
+}
+
+.b{
+    width: 400px;
+    height: 200px;
+    background: green; 
+    border: 10px yellow solid;
+    box-sizing: border-box;
+ }
+
+  /* float left,right,none*/
+   

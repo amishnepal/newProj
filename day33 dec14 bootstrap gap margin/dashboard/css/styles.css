@@ -1,0 +1,25 @@
+.btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  background: #25ab7c;
+  color: white;
+}
+
+.bg-1 {
+  border: 1px solid #d7dde9;
+  border-radius: 10px;
+}
+
+.c10, .src {
+  padding: 10px 15px;
+  border: 1px solid #d7dde9;
+}
+
+.hd {
+  background: #25ab7c;
+  border-radius: 10px;
+}
+
+.roun {
+  border-radius: 5px;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ height: 1900px;}
+        .box{ width: 100px; height: 100px; background: green; left: 20px; top: 20px;
+        position: relative;}
+        .box1{ width: 100px; height: 100px; background: red; position: fixed; right: 200px;
+        top: 20px;}
+        .box2{ width: 100px; height: 100px; background: skyblue; position: sticky; top: 20px;}
+        .s{ width: 30px; height: 30px; background: orange; position: absolute; bottom: 0; right: 0; z-index: 2;}
+        .ss{ width: 30px; height: 30px; background: lightgreen; position: absolute; bottom: 15px; right: 15px; z-index: 1;}
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"> <div class="s"></div>  <div class="ss"></div></div>
+    <div class="box2"></div>
+</body>
+</html>

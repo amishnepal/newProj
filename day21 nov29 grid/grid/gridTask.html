@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .box {
+            padding: 30px;
+        }
+
+        .a {      grid-area: a; background-color: lightblue;}
+
+        .b { grid-area: b; background-color: green;}
+
+        .c { grid-area: c; background-color: purple; }
+
+        .d { grid-area: d; background-color: orange; }
+
+        .e {grid-area: e; background-color: orange; }
+        .f{grid-area: f;background-color: darkblue;}
+
+        .con {
+            display: grid;
+            grid-template-areas: 'a a a a a a' '. b b b c .' 
+            '. d d e e .' 'f f f f f f';
+            gap:2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="box a">.header</div>
+        <div class="box b">main-content</div>
+        <div class="box c">.sidebar</div>
+        <div class="box d">.twin</div>
+        <div class="box e">.twin</div>
+        <div class="box f">.footer</div>
+
+    </div>
+</body>
+
+</html>

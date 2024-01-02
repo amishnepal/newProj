@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>
+                HTML FORM
+            </legend>
+            <input type="text" name="couqq" list="a">
+            <datalist id="a">
+                <option value="Nepal"></option>
+                <option value="India"></option>
+                <option value="Bhutan"></option>
+                <option value="Pak"></option>
+            </datalist>
+            <hr>
+            food
+            <select name="food" multiple>
+                <optgroup label="fruits">
+                    <option>Mango</option> <option>Apple</option>
+                </optgroup>
+                <optgroup label="Veg">
+                    <option>Veg1</option> <option>Veg2</option>
+                </optgroup>    
+            </select>
+            <hr>
+
+            Week:<input type="week" name="week">
+            <hr>
+            Month:<input type="month" name="mm">
+            <hr>
+            Date:<input type="date" name="date">
+            <hr>
+            Time:<input type="datetime-local" name="time">
+            <hr>
+            <input type="file" name="photo" accept="image/*">
+            <hr>
+            <input type="color" name="color">
+            <hr>
+            <input type="range" name="range">
+            <hr>
+            <input type="email" name="email">
+            <hr>
+            <input type="password" name="pass">
+            <hr>
+            <input type="image" src="a.jpeg" width="50">
+            <input type="submit" value="ok">
+            <button>Send</button>    
+            <input type="reset">
+        </fieldset>
+    </form>
+    <form action="https://www.google.com/search" target="_blank">
+        <fieldset>
+            <legend>Google search</legend>
+            <input type="text" name="q">
+            <button>Search</button>
+        </fieldset>  
+          
+    </form>
+
+    <form action="https://www.bing.com/search" target="_blank">
+        <fieldset>
+            <legend>Bing search</legend>
+            <input type="text" name="q">
+            <button>Search</button>
+        </fieldset>  
+          
+    </form>
+
+
+        
+</body>
+</html>

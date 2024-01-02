@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tag</h1>
+    <h1>Sajan</h1>
+    <button onclick="document.getElementsByTagName('h1')[0].style
+    .color='red'">chg color</button>
+    <button onclick="document.getElementsByTagName('h1')[0].style
+    .backgroundColor='yellow'">background</button>
+    <button onclick="document.getElementsByTagName('h1')[0].style
+    .fontSize='80px'">fontSize</button>
+    <button onclick="document.getElementsByTagName('h1')[0].style
+    .marginLeft='40px'">marginLeft</button>
+    <div class="demo">This is <a>san </a>class</div>
+    <div id="demo">This is Id</div>
+    <script>
+        var a;
+        a=document.getElementsByTagName('h1')[0].innerHTML
+        console.log(a)
+        a=document.getElementsByClassName('demo')[0].innerText
+        console.log(a)
+        a=document.getElementById('demo').innerText
+        console.log(a)
+    </script>
+</body>
+</html>

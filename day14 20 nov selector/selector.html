@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box p{color: red;}/*descendant */
+        .box>p{color:green;}/*child */
+        .box~p{background: blue;}/*general sibling */
+        .box+p{background: yellow;}/*adjacent sibling */
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptatem.</p>
+        <div class="ss">
+            <p>aarambha</p>
+        </div>
+    </div>
+    <p>sajan</p> <p>sagar</p>
+</body>
+</html>

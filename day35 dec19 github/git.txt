@@ -1,0 +1,66 @@
+git --version
+git config --global user.name "sajankafle26"
+git config --global user.email "sajankafle9841@gmail.com"
+
+
+mkdir myproject
+cd myproject
+
+Initialize Git git init 
+Git Adding New Files sajan.html   ls sajan.html
+git status
+
+git add index.html
+
+Git Add More than One File
+git add --all
+
+git commit -m "updated index.html with emergency fix"
+
+
+Git Push to GitHub
+echo "# kafles" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sajankafle26/kafles.git
+git push -u origin main
+
+
+
+
+create repso  add a read me 
+git init  
+create file 
+git add .  
+git status
+code update in that file  
+git commit -m "i hv update"
+git status
+
+branch(master)
+git checkout -b sajan
+now create sagar file
+git add .
+git commit -m "new branch"
+git checkout master
+git checkout sajan
+
+git checkout master
+
+git merge sajan
+
+git remote add origin https://github.com/sajankafle26/skd.git
+git push -u origin master
+git status
+now for all file (style.css)
+git commit -m "sss"
+
+
+pull
+
+git clone "https://github.com/sajankafle26/skd.git"
+git pull
+
+git push

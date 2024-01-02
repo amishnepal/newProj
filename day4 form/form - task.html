@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body bgcolor="#00ffff">
+    <h1>Student Registration Form</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input name="name" type="text" id="name" placeholder="Enter full name"></td>
+            </tr>
+            <tr>
+                <td><label for="fatherName">Father's Name:</label></td>
+                <td><input name="fathername" type="text" id="fatherName"></td>
+            </tr>
+            <tr>
+                <td><label for="motherName">Mother's Name:</label></td>
+                <td><input name="mothername" type="text" id="motherName"></td>
+            </tr>
+            <tr>
+                <td><label for="phoneNumber">Phone Number:</label></td>
+                <td><input name="phoneNum" type="number" id="phoneNumber" placeholder="017xxxxxxx"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input name="email" type="email" id="email" placeholder="sample@example.com"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="boy" id="m"><label for="m">Male</label>
+                    <input type="radio" name="gender" value="girl" id="f"><label for="f">Female</label>
+                    <input type="radio" name="gender" value="other" id="o"><label for="o">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td>
+                    <input name="day" type="number" id="day" min="1" max="32">-
+                    <input name="mon" type="number" id="mon" min="1" max="12">-
+                    <input name="year" type="number" id="year" min="1900" max="2023">
+                    <em>(dd-mm-yyyy)</em>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="adr">Address:</label></td>
+                <td><input name="address" type="text" id="adr" placeholder="Street:-   House:-   Road:-"></td>
+            </tr>
+            <tr>
+                <td><label for="bdg">Blood Group:</label></td>
+                <td>
+                    <select name="bdg" id="bdg">
+                        <option value="O-">O-</option>
+                        <option value="O+">O+</option>
+                        <option value="A-">A-</option>
+                        <option value="A+">A+</option>
+                        <option value="B-">B-</option>
+                        <option value="B+">B+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="AB+">AB+</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Department:</td>
+                <td>
+                    <input type="radio" name="dept" value="cse" id="cse"><label for="cse">CSE</label>
+                    <input type="radio" name="dept" value="eee" id="ee"><label for="ee">EEE</label>
+                    <input type="radio" name="dept" value="bba" id="bba"><label for="bba">BBA</label>
+                </td>
+            </tr>
+            <tr>
+               <td>Course:</td>
+               <td>
+                <input type="checkbox" value="C" name="course" id="c"><label for="c">C</label>
+                <input type="checkbox" value="C++" name="course" id="c++"><label for="c++">C++</label>
+                <input type="checkbox" value="Java" name="course" id="java"><label for="java">Java</label>
+                <input type="checkbox" value="AI" name="course" id="ai"><label for="ai">AI</label>
+                <input type="checkbox" value="Machine learning" name="course" id="machine-learning"><label for="machine-learning">Machine learning</label>
+                <input type="checkbox" value="Robotics" name="course" id="robotics"><label for="robotics">Robotics</label>
+               </td>
+            </tr>
+            <tr>
+                <td><label for="fil">Photo:</label></td>
+                <td><input name="files" type="file" id="fil"></td>
+            </tr>
+        </table>
+        <button>Submit</button>
+    </form>
+    <div class="a">a</div>
+</body>
+</html>

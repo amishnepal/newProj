@@ -1,0 +1,14 @@
+@mixin res($min: 0px, $max: 480px) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+
+@mixin flex($jc:space-between,$wrap:no-wrap,$fd:row){
+    display: flex;
+    justify-content: $jc;
+    align-items: center;
+    flex-wrap: $wrap;
+    flex-direction: $fd;
+}

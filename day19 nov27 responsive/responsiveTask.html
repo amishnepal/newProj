@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .g {
+            background: green;
+            padding: 40px;
+        }
+
+        .flex {
+            margin: 30px;
+        }
+
+        @media(min-width:480px) and (max-width:992px) {
+            .box {
+                display: flex;
+                gap: 20px;
+                margin: 20px 0;
+            }
+        }
+
+        @media(min-width:992px) {
+            .flex {
+                display: flex;
+                gap: 30px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="g"></div>
+    <div class="flex">
+        <div class="box">
+            <div class="g"></div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia vitae asperiores ad, fuga voluptate
+            quidem ipsam ratione architecto officiis facere! Accusantium exercitationem minima voluptatibus
+            reiciendis!
+
+        </div>
+        <div class="box">
+            <div class="g"> </div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia vitae asperiores ad, fuga voluptate
+            quidem ipsam ratione architecto officiis facere! Accusantium exercitationem minima voluptatibus
+            reiciendis!
+
+        </div>
+        <div class="box">
+            <div class="g"></div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia vitae asperiores ad, fuga voluptate
+            quidem ipsam ratione architecto officiis facere! Accusantium exercitationem minima voluptatibus
+            reiciendis!
+
+        </div>
+    </div>
+
+</body>
+
+</html>

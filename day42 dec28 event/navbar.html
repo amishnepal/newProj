@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 1900px;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+        }
+
+        .b {
+            display: none;
+        }
+
+        header {
+            background: green;
+            padding: 100px 0;
+            width: 100%;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: yellow;
+        }
+
+        iframe {
+            display: block;
+            position: fixed;
+            bottom: 0;
+
+        }
+
+        .video {
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            display: none;
+            background: red;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="a" src="https://broadwayinfosys.com/uploads/logo/1667276403.new_broadway_logo.svg" alt="">
+        <img class="b" src="https://broadwayinfosys.com/uploads/logo/1667276492.logo-design-small.svg" alt="">
+    </header>
+    <div class="video">
+    
+        <span onclick="aa()">X</span>
+    </div>
+    <script>
+        function aa(){
+            document.querySelector('body').removeChild(document.querySelector('.video'))
+        }
+        window.addEventListener('scroll', function () {
+
+            var a = scrollY
+            if (a > 200) {
+                document.querySelector('header').classList.add('sticky')
+                document.querySelector('.a').style.display = 'none'
+                document.querySelector('.b').style.display = 'block'
+                document.querySelector('.video').style.display = 'block'
+
+            }
+            else {
+                document.querySelector('header').classList.remove('sticky')
+                document.querySelector('.a').style.display = 'block'
+                document.querySelector('.b').style.display = 'none'
+                document.querySelector('.video').style.display = 'none'
+            }
+        }
+
+        )
+
+
+
+    </script>
+</body>
+
+</html>
