@@ -1,3 +1,5 @@
 npm run dev
 npm run sass
 es7 react/redux install vscode
+html to jsx extension
+npm install react-router-dom@6

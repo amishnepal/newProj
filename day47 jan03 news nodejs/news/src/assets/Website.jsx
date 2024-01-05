@@ -11,9 +11,7 @@ function Website(){
     return <>
     <Header/>
     <Navbar/>
-    <Home tt="men's clothing"/>
-    <Home tt="electronics"/>
-    <Home tt="women's clothing"/>
+  
     <Footer/>
     </>
 }
