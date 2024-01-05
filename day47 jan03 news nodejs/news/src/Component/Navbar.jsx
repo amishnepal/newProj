@@ -4,6 +4,9 @@ import Home from '../Pages/Home'
 import Aboutus from '../Pages/Aboutus'
 import CatData from '../CatData'
 import Category from '../Pages/Category'
+import Details from '../Pages/Details'
+import Sajan from '../Pages/Sajan'
+import Nopage from '../Pages/Nopage'
 
 
 
@@ -37,9 +40,11 @@ function Navbar() {
   </div>
 </nav>
 <Routes>
-  <Route path="/" element={<Home/>}/>
+  <Route path="/" element={<Sajan/>}/>
   <Route path="/san" element={<Aboutus/>}/>
   <Route path="/cat/:abc/" element={<Category/>}/>
+  <Route path="/details/:id" element={<Details/>}/>
+  <Route path="/*" element={<Nopage/>}/>
 </Routes>
 
       

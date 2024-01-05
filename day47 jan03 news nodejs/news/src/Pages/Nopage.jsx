@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Detail() {
+function Nopage() {
   return (
     <div>
-      
+      <p>No page found</p>
     </div>
   )
 }
 
-export default Detail
+export default Nopage
